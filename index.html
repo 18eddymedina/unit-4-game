@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="style.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,73 +11,50 @@
     <title>Document</title>
 </head>
 <body>
+        <video id="vid" width="300" height="150" autoplay="autoplay" loop="loop" muted="muted" ><source src="http://new.utaustinbootcamps.com/wp-content/uploads/sites/75/2018/08/UTAustin_coding.mp4"></video>
     <div class="container" id="bigDiv">
-        <div class="container" id="pic">
-        <img id="p1" src="https://via.placeholder.com/150x150/">
+        <h1 id="choose1" style="color: red">Choose Your Character</h1>
+        <div class="container" id="pic1">
+        <img id="p1" src="bob.JPG" width="140px" height="140px">
        
-         <p id="p1p">player1</p>
+         <p id="p1p">HP:</p>
       </div>
 
-      <div class="container" id="pic">
-     <img id="p2" src="https://via.placeholder.com/150x150/">
+      <div class="container" id="pic2">
+     <img id="p2" src="walt.JPG" width="140px" height="140px">
            
-        <p id="p2p">player2</p>
+        <p id="p2p">HP:</p>
     </div>
 
-          <div class="container" id="pic">
-         <img id="p3" src="https://via.placeholder.com/150x150/">
+          <div class="container" id="pic3">
+         <img id="p3" src="don fox.JPG" width="140px" height="140px">
                
-         <p id="p3p">player3</p>
+         <p id="p3p">HP:</p>
         </div>
 
-        <div class="container" id="pic">
-        <img id="p4" src="https://via.placeholder.com/150x150/">
+        <div class="container" id="pic4">
+        <img id="p4" src="sam.JPG" width="140px" height="140px">
                    
-             <p id="p4p">player4</p>
-        </div>
+             <p id="p4p">HP:</p>
         </div>
 
+        </div>
+        <div class="container" id="bigDiv2">
+
+        </div>
+        <div>   
+                     <button id="attack" type="button"> Fight!</button>
+        </div>
+        <div class="container" id="bigDiv3" style="color:red">
+            <h3>Enemies Avaiable to Attack</h3>
+            <h3>Fight Section</h3>
+            <h3>Defender</h3>
+            </div>
     </div>
 
-        <script>
-        var clicked=false;
 
-        $("#p1").click(function(){
-            if(clicked===false){
-    alert("Player 1 was clicked");
-    clicked=true;
-}
-
-
-});
-
-$("#p2").click(function(){
-    if(clicked===false){
-    alert("Player 2 was clicked");
-    clicked=true;
-
-}
-
-});
-
-$("#p3").click(function(){
-    if(clicked===false){
-    alert("Player 3 was clicked");
-    clicked=true;
-
-}
-});
-
-$("#p4").click(function(){
-    if(clicked===false){
-    alert("Player 4 was clicked");
-    clicked=true;
-}
-});
-        </script>
-
-    </div>
-    <!-- <script src="assets/javascript/game.js"></script> -->
+    <script src="game.js"></script>
 
 </body>
+
 </html>
