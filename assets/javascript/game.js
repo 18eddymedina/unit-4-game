@@ -26,7 +26,7 @@ $("#p1").click(function(){
     $("#pic3").appendTo("#bigDiv2");
     $("#pic4").appendTo("#bigDiv2");
 }
-else if(chooseHero===true&& newFight===false){
+else if(chooseHero===true&& newFight===false&&hero!=0){
     newFight=true;
     villan=0;
     $("#pic1").appendTo("#bigDiv3");
@@ -50,7 +50,7 @@ $("#p2").click(function(){
     $("#pic3").appendTo("#bigDiv2");
     $("#pic4").appendTo("#bigDiv2");
 }
-else if(chooseHero===true&&newFight===false){
+else if(chooseHero===true&&newFight===false&&hero!=1){
 newFight=true;
 villan=1;
 $("#pic2").appendTo("#bigDiv3");
@@ -73,7 +73,7 @@ $("#p3").click(function(){
     $("#pic2").appendTo("#bigDiv2");
     $("#pic4").appendTo("#bigDiv2");
 }
-else if(chooseHero===true&&newFight===false){
+else if(chooseHero===true&&newFight===false&&hero!=2){
     newFight=true;
     villan=2;
     $("#pic3").appendTo("#bigDiv3");
@@ -96,7 +96,7 @@ $("#p4").click(function(){
     $("#pic2").appendTo("#bigDiv2");
     $("#pic3").appendTo("#bigDiv2");
 }
-else if(chooseHero===true&&newFight===false){
+else if(chooseHero===true&&newFight===false&&hero!=3){
     newFight=true;
     villan=3;
     $("#pic4").appendTo("#bigDiv3");
