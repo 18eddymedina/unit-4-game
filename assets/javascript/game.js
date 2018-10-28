@@ -3,9 +3,9 @@ var chooseHero=false;
 var newFight=false;
 var hero=0;
 var villan=0;
-var hp=[200,180,150,100];
-var ap=[10,15,20,25];
-var ca=[5,10,15,20];
+var hp=[105,125,150,198];
+var ap=[5,4,3,3];
+var ca=[15,13,10,5];
 var cuma=[0,0,0,0];
 var def=0;
 
@@ -153,6 +153,8 @@ $("#attack").click(function(){
         }
         if(hp[hero]<=0){
             alert("You lose :3");
+            document.location.reload();
+
         }
 
 
